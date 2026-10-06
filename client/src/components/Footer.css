@@ -1,0 +1,28 @@
+.footer { background: var(--color-black); color: var(--color-beige); margin-top: 80px; }
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  gap: 40px;
+  padding: 70px 32px 50px;
+}
+.footer-brand h3 { font-size: 1.6rem; color: var(--color-white); margin-bottom: 14px; letter-spacing: 0.1em; }
+.footer-brand p { font-size: 0.85rem; color: var(--color-gray-light); max-width: 260px; }
+.footer-social { display: flex; gap: 16px; margin-top: 20px; }
+.footer-social a { color: var(--color-beige); }
+.footer-col h4 { color: var(--color-white); font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px; font-weight: 600; }
+.footer-col a { display: block; font-size: 0.86rem; color: var(--color-gray-light); margin-bottom: 12px; transition: var(--transition); }
+.footer-col a:hover { color: var(--color-white); }
+.footer-newsletter p { font-size: 0.84rem; color: var(--color-gray-light); margin-bottom: 16px; }
+.footer-newsletter form { display: flex; gap: 8px; }
+.footer-newsletter input {
+  flex: 1; background: transparent; border: 1px solid #444; padding: 11px 14px; color: white; font-size: 0.85rem; outline: none;
+}
+.footer-newsletter .btn { border-color: var(--color-white); padding: 11px 20px; }
+.footer-bottom { border-top: 1px solid #333; padding: 22px 32px; text-align: center; font-size: 0.78rem; color: var(--color-gray-light); }
+
+@media (max-width: 900px) {
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .footer-top { grid-template-columns: 1fr; }
+}

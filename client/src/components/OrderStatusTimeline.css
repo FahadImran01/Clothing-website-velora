@@ -1,0 +1,29 @@
+.order-timeline { display: flex; align-items: flex-start; width: 100%; padding: 10px 0; }
+.order-timeline-step { display: flex; flex-direction: column; align-items: center; flex: 1; position: relative; }
+.order-timeline-dot {
+  width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 600;
+  background: white; color: var(--color-gray-light); z-index: 2; transition: var(--transition);
+}
+.order-timeline-step.done .order-timeline-dot { background: var(--color-black); border-color: var(--color-black); color: white; }
+.order-timeline-step.active .order-timeline-dot { border-color: var(--color-black); color: var(--color-black); box-shadow: 0 0 0 3px var(--color-beige); }
+.order-timeline-label {
+  margin-top: 8px; font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-gray-light);
+  text-align: center;
+}
+.order-timeline-step.done .order-timeline-label,
+.order-timeline-step.active .order-timeline-label { color: var(--color-black); font-weight: 600; }
+.order-timeline-line {
+  position: absolute; top: 13px; left: 50%; width: 100%; height: 1.5px; background: var(--color-border); z-index: 1;
+}
+.order-timeline-line.done { background: var(--color-black); }
+.order-timeline-step:last-child .order-timeline-line { display: none; }
+
+.order-timeline-cancelled {
+  display: flex; align-items: center; gap: 10px; color: #b0231f; background: #fbe4e4; padding: 12px 16px; border-radius: 8px; font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .order-timeline-label { font-size: 0.6rem; }
+  .order-timeline-dot { width: 24px; height: 24px; }
+}

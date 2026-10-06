@@ -1,0 +1,19 @@
+.account-layout { display: grid; grid-template-columns: 240px 1fr; gap: 50px; padding-bottom: 90px; }
+@media (max-width: 800px) { .account-layout { grid-template-columns: 1fr; } }
+
+.account-nav { display: flex; flex-direction: column; gap: 4px; border-right: 1px solid var(--color-border); padding-right: 20px; height: fit-content; }
+@media (max-width: 800px) { .account-nav { border-right: none; flex-direction: row; flex-wrap: wrap; padding-right: 0; border-bottom: 1px solid var(--color-border); padding-bottom: 16px; } }
+.account-nav-item {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px; font-size: 0.9rem; color: var(--color-gray);
+  transition: var(--transition); text-align: left;
+}
+.account-nav-item.active { background: var(--color-offwhite); color: var(--color-black); font-weight: 500; }
+.account-nav-item:hover { color: var(--color-black); }
+.account-logout { color: #b0231f; }
+
+.account-content h3 { font-size: 1.3rem; margin-bottom: 24px; }
+.account-form { display: flex; flex-direction: column; gap: 18px; max-width: 420px; }
+.account-form label { display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: var(--color-gray); }
+.account-form input { padding: 13px 14px; border: 1px solid var(--color-border); font-size: 0.9rem; color: var(--color-black); }
+.account-form input:disabled { background: var(--color-offwhite); color: var(--color-gray); }
+.account-form .btn { align-self: flex-start; margin-top: 8px; }

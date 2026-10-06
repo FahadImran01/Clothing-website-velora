@@ -1,0 +1,8 @@
+.return-request-trigger { margin-top: 8px; padding: 9px 16px; font-size: 0.72rem; }
+.return-request-form { margin-top: 14px; border-top: 1px solid var(--color-border); padding-top: 14px; }
+.return-request-form textarea {
+  width: 100%; padding: 12px 14px; border: 1px solid var(--color-border); font-size: 0.85rem;
+  font-family: inherit; resize: vertical; margin-bottom: 12px;
+}
+.return-request-form-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.return-request-form-actions .btn { padding: 9px 16px; font-size: 0.72rem; }

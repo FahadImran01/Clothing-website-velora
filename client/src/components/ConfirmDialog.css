@@ -1,0 +1,11 @@
+.confirm-dialog-backdrop {
+  position: fixed; inset: 0; background: rgba(20, 20, 20, 0.5); z-index: 300;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.confirm-dialog { background: white; max-width: 400px; width: 100%; padding: 32px; text-align: center; }
+.confirm-dialog h3 { font-size: 1.3rem; margin-bottom: 12px; }
+.confirm-dialog p { color: var(--color-gray); margin-bottom: 26px; font-size: 0.9rem; }
+.confirm-dialog-actions { display: flex; gap: 12px; justify-content: center; }
+.confirm-dialog-actions .btn { padding: 12px 22px; font-size: 0.74rem; flex: 1; }
+.confirm-dialog-danger { background: #b0231f; color: white; border-color: #b0231f; }
+.confirm-dialog-danger:hover { background: white; color: #b0231f; }

@@ -1,0 +1,13 @@
+.order-history-page { padding-bottom: 90px; }
+.order-list { display: flex; flex-direction: column; gap: 20px; }
+.order-card { border: 1px solid var(--color-border); padding: 22px; }
+.order-card-new { border-color: var(--color-black); }
+.order-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.order-id { font-weight: 600; display: block; }
+.order-date { font-size: 0.8rem; color: var(--color-gray); }
+.order-items-preview { display: flex; gap: 8px; margin-bottom: 16px; }
+.order-items-preview img { width: 52px; height: 64px; object-fit: cover; }
+.order-card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 14px; font-size: 0.85rem; color: var(--color-gray); }
+.order-card-footer strong { color: var(--color-black); font-size: 1rem; }
+.order-card-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+.order-card-actions .btn { padding: 9px 16px; font-size: 0.72rem; }
